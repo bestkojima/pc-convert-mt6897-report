@@ -6,6 +6,8 @@
 
 本篇承接 [主报告](PC_CONVERT_MT6897技术报告.md)，分析日期 **2026-11-06**。版本依据仍为本地 LiteRT Torch 0.10.0、LiteRT 2.3.0、Quantizer 0.10.1。这里只做源码与一手资料分析，未下载模型、执行转换或进行设备推理。
 
+选定 Qwen2.5-0.5B 后，继续读 [逐步转换与面试专题](Qwen2.5-0.5B_MT6897逐步转换与面试问答.md)：以确切参数说明技术栈、量化、split-cache 与 Android 运行合同。
+
 下文 `WHEEL:` 指本地 `D:\misc\pc_convert\pc_convert\offline\pip_pkgs\litert_torch-0.10.0-py3-none-any.whl` 内的源文件；行号以归档内原文件为准。该包相关源码具有 Apache-2.0 声明，节选用于解释实现。在线资料用于补充模型结构和官方部署路线，不能覆盖本地版本的实际行为。
 
 ## 1. “能转换”要拆成四个问题
