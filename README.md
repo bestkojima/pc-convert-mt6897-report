@@ -2,6 +2,8 @@
 
 [阅读全文：转换链、设备运行、Cache 设置与面试题](PC_CONVERT_MT6897技术报告.md)
 
+[扩展专题：其他 LLM、ASR、TTS 能否转换，怎样选模型和拆分 NPU 子图](LLM_ASR_TTS扩展可行性分析.md)
+
 面向需要讲清端侧模型部署原理、代码执行路径和实际限制的工程师。报告包含：
 
 - PyTorch/权重到 TFLite、校准量化、MediaTek AOT 的逐阶段分析。
