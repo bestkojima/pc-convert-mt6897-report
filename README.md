@@ -1,5 +1,11 @@
 # pc_convert → MT6897 NPU 技术报告
 
+## 下载 NPU Convert 工具包
+
+[Release 压缩包](https://github.com/bestkojima/pc-convert-mt6897-report/releases/tag/v2026.11.10) · [解压与安装说明](RELEASE_README.md)
+
+附件包含转换脚本、Python 离线依赖和报告，适用 Linux x86_64 / CPython 3.12。NeuroPilot SDK 受独立再分发许可限制，由使用者按许可单独获取并补入；公开 ZIP 文件名中的 `sdk-external` 表示这一条件。
+
 ## 先读最新对照：DiT 官方支持与本地断口
 
 [官方 LiteRT 与 pc_convert：具体适配、未接通环节、MT6897 生图路线与证据清单](DiT_官方LiteRT与pc_convert适配对比及MT6897落地报告.md)
@@ -32,6 +38,6 @@
 
 版本依据为随包 LiteRT 2.3.0、LiteRT Torch 0.10.0、Quantizer 0.10.1。前三份报告初稿日期为 2026-11-06；DiT 对照及官方支持状态核对更新于 2026-11-10，来源固定到具体 commit。
 
-本仓库发布分析报告、必要源码节选和比较记录。原始工具包、模型权重和 MediaTek 二进制 SDK 不随报告上传。报告中的源码节选用于解释，版权与许可归原项目。
+Git 文档区发布分析报告、必要源码节选和比较记录；转换工具与 Python 依赖通过 Release ZIP 发布。模型权重和受限 NeuroPilot SDK 归档不上传。报告中的源码节选用于解释，版权与许可归原项目。
 
 本次完成静态分析与资料研究，没有执行模型转换或 MT6897 实机推理。操作示例的适用条件和未完成的设备依赖在正文中列明。

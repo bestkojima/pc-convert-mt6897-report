@@ -615,4 +615,4 @@ save_png(pipeline.postprocess(pixels))
 - [四文件源码来源对照](evidence/LiteRT_Torch_0.10.0_四文件对照.md)
 - [官方 DiT 模型适配、shape、量化与 host 源码索引](evidence/官方DiT适配源码索引.md)
 
-本仓库发布报告、必要源码节选和比较记录；不发布原始离线工具包、MediaTek SDK 二进制、模型权重或凭据。官方源码节选来自 Google AI Edge 项目，相关文件采用 Apache-2.0，版权与许可归原项目；原包节选用于用户提供代码的分析。上述代码问题本轮没有实施修复，报告中的运行循环与交付物明确属于后续实现合同。
+Git 文档区发布报告、必要源码节选和比较记录；转换脚本与 Python 依赖另通过 Release ZIP 发布，见 [发布说明](RELEASE_README.md)。受限 NeuroPilot SDK 归档、模型权重和凭据不上传。官方源码节选来自 Google AI Edge 项目，相关文件采用 Apache-2.0，版权与许可归原项目；原包节选用于用户提供代码的分析。上述代码问题本轮没有实施修复，报告中的运行循环与交付物明确属于后续实现合同。
