@@ -1,0 +1,52 @@
+{
+  "fetched_utc": "2026-11-10T15:11:15.226088+00:00",
+  "wheel": "pc_convert/offline/pip_pkgs/litert_torch-0.10.0-py3-none-any.whl",
+  "comparison": "direct bytes and decoded line text; no hashing",
+  "files": [
+    {
+      "member": "litert_torch/_convert/core.py",
+      "upstream_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/_convert/core.py",
+      "final_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/_convert/core.py",
+      "local_bytes": 11676,
+      "upstream_bytes": 11676,
+      "local_lines": 310,
+      "upstream_lines": 310,
+      "exact_bytes_equal": true,
+      "normalized_lines_equal": true
+    },
+    {
+      "member": "litert_torch/_convert/litert_converter.py",
+      "upstream_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/_convert/litert_converter.py",
+      "final_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/_convert/litert_converter.py",
+      "local_bytes": 8998,
+      "upstream_bytes": 8998,
+      "local_lines": 258,
+      "upstream_lines": 258,
+      "exact_bytes_equal": true,
+      "normalized_lines_equal": true
+    },
+    {
+      "member": "litert_torch/generative/export_hf/model_ext/exportables.py",
+      "upstream_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/generative/export_hf/model_ext/exportables.py",
+      "final_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/generative/export_hf/model_ext/exportables.py",
+      "local_bytes": 9158,
+      "upstream_bytes": 9158,
+      "local_lines": 224,
+      "upstream_lines": 224,
+      "exact_bytes_equal": true,
+      "normalized_lines_equal": true
+    },
+    {
+      "member": "litert_torch/generative/export_hf/model_ext/flux2_klein/flux2_klein.py",
+      "upstream_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/generative/export_hf/model_ext/flux2_klein/flux2_klein.py",
+      "final_url": "https://raw.githubusercontent.com/google-ai-edge/litert-torch/v0.10.0/litert_torch/generative/export_hf/model_ext/flux2_klein/flux2_klein.py",
+      "local_bytes": 11929,
+      "upstream_bytes": 11929,
+      "local_lines": 315,
+      "upstream_lines": 315,
+      "exact_bytes_equal": true,
+      "normalized_lines_equal": true
+    }
+  ],
+  "upstream_tag_commit": "90cbbaa61ab3f029f1273b108909a5b4d9cc2c12"
+}

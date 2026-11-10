@@ -8,6 +8,8 @@
 
 选定 Qwen2.5-0.5B 后，继续读 [逐步转换与面试专题](Qwen2.5-0.5B_MT6897逐步转换与面试问答.md)：以确切参数说明技术栈、量化、split-cache 与 Android 运行合同。
 
+**2026-11-10 补充：**[官方 LiteRT 与本包的 DiT 对照报告](DiT_官方LiteRT与pc_convert适配对比及MT6897落地报告.md)进一步区分了官方模型 adapter、本地工具封装与完整业务运行器，并记录 MT6897 支持表/target 与仓库支持答复的冲突。本文各任务的 NPU 路线同样需要目标 ROM/runtime 的真实执行证据。
+
 下文 `WHEEL:` 指本地 `D:\misc\pc_convert\pc_convert\offline\pip_pkgs\litert_torch-0.10.0-py3-none-any.whl` 内的源文件；行号以归档内原文件为准。该包相关源码具有 Apache-2.0 声明，节选用于解释实现。在线资料用于补充模型结构和官方部署路线，不能覆盖本地版本的实际行为。
 
 ## 1. “能转换”要拆成四个问题

@@ -2,6 +2,8 @@
 
 **面试与工程阅读版 · 2026-11-06**
 
+**2026-11-10 增补：**[官方 LiteRT 与本包的 DiT 适配对照及 MT6897 落地报告](DiT_官方LiteRT与pc_convert适配对比及MT6897落地报告.md)已补充四个关键文件与官方 v0.10.0 相同的直接比较证据、官方 FLUX 模型改写与 host 循环、本地尚未接通环节及待验证清单。原包 README 的实验数值属于作者历史记录；当前目录没有对应原始日志、模型和图片可复查。
+
 分析对象：`D:\misc\pc_convert\pc_convert`。源码与离线依赖共同作为版本依据：LiteRT **2.3.0**、LiteRT Torch **0.10.0**、AI Edge Quantizer **0.10.1**、PyTorch **2.14.1+cpu**、MediaTek SDK wrapper **2.3.0**。本文完成源码分析与官方资料核对；没有安装工具链、转换实际模型或连接 MT6897 手机。
 
 ## 先把结论讲清楚
@@ -570,7 +572,7 @@ return 0
 
 ### 5.5 MT6897 支持状态：用对证据层级
 
-截至本次分析，官方 MediaTek 文档与 LiteRT 2.3.0 target 都列有 MT6897；公开问题中又存在特定 LiteRT-LM/运行库组合无法初始化或执行的记录。**结论是：MT6897 有编译目标与官方列出的集成入口；具体模型、运行库和手机 ROM 的闭环尚需设备证据。**
+截至 2026-11-10 复核，官方 MediaTek 文档与 LiteRT 2.3.0 target 都列有 MT6897；公开问题中存在具体 LiteRT-LM/ROM 组合初始化失败的记录。另有 2026-10-15 的 contributor 支持答复称 MT6897 当前不支持 LiteRT NPU，其措辞针对 SoC，未限定某个模型。**公开支持表/target 与该答复存在未澄清冲突；下一步应先在目标 ROM 与配套 runtime 上完成 NPU 初始化和小图实际 Run，再推进大型模型。** [原支持答复](https://github.com/google-ai-edge/LiteRT/issues/6886#issuecomment-6200222696)
 
 公开 issue 的模型与版本条件见第 13 章来源索引。不要把“枚举中存在”说成“任何 LLM 均已支持”，也不要把某个 LM 配置失败说成“整颗 NPU 对 LiteRT 永久不可用”。
 
